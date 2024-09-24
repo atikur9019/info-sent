@@ -1,0 +1,123 @@
+
+/* ----------------------------google-font_poppins----------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* -------------------------------------main-style--------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: ;
+    --font-color: #a363aa;
+    --bg-color: #ffdad5;
+    --second-bg-color: #fff7f9;
+    --border-color: ;
+    --hover-color: ;
+    --active-color: ;
+    --transition: background-color 0.3s ease;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(var(--bg-color), var(--second-bg-color));
+}
+
+
+/* --------------------------contract-container------------------------------ */
+
+.contract-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contract-container .contract-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contract-container .contract-left h2 {
+    font-weight: 600;
+    color: var(--font-color);
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contract-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 20px;
+}
+
+.contract-inputs:focus {
+    border: 2px solid #a363aa;
+}
+
+.contract-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contract-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contract-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+    transition: background-color 1.9s ease;
+}
+
+.contract-left button:hover {
+    background: linear-gradient(270deg, #fa6d86, #ff994f);
+}
+
+.contract-left button img {
+    height: 15px;
+}
+
+
+.contract-right {
+    width: 500px;
+}
+
+@media (max-width: 800px) {
+    .contract-inputs {
+        width: 80vw;
+    }
+    .contract-right {
+        display: none;
+    }
+}
+
